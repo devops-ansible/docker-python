@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+/boot.sh
+
+# if given CMD is `start` do
+if [ "$1" == "_start" ]; then
+    python3
+else
+    exec "$@"
+fi
